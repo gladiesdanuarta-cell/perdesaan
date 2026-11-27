@@ -259,30 +259,26 @@
     <section class="cart-section" id="pesanan">
     <div class="cart-box">
         <h2>Formulir Pemesanan</h2>
-
         <form action="https://wa.me/6285726380628"
-              method="get" target="_blank">
+      method="get" target="_blank">
 
-            <label>Nama Pembeli</label>
-            <input type="text"
-                   placeholder="Masukkan nama kamu"
-                   required>
+    <label>Detail Pemesanan</label>
 
-            <label>Nama Produk dan Jumlah Pesanan</label>
-            <textarea
-                rows="5"
-                placeholder="Contoh: Beras premium 5 kg"
-                required></textarea>
+    <textarea
+        name="text"
+        rows="10"
+        placeholder="Nama Pembeli:
 
-            <label>Alamat Pengiriman</label>
-            <textarea
-                rows="3"
-                placeholder="Masukkan alamat lengkap"
-                required></textarea>
+Nama Produk dan Jumlah:
+- Beras Premium 5 kg
+- Cabai Rawit 1 kg
 
-            <button type="submit" class="cart-submit">
-                Pesan via WhatsApp
-            </button>
+Alamat Pengiriman:"
+        required></textarea>
+
+    <button type="submit" class="cart-submit">
+        Pesan via WhatsApp
+    </button>
 
         </form>
     </div>
