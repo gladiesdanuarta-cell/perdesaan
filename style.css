@@ -416,3 +416,141 @@ footer p {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* =========================
+   KERANJANG BELANJA
+========================= */
+
+.cart-floating {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 9999;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Tombol keranjang */
+.cart-toggle {
+    background: #245331;
+    color: white;
+    border: none;
+    padding: 13px 20px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Angka jumlah produk */
+.cart-count {
+    background: #d5a64a;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+/* Kotak isi keranjang */
+.cart-panel {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 60px;
+    width: 320px;
+    max-width: calc(100vw - 40px);
+    max-height: 65vh;
+    overflow-y: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+}
+
+/* Munculkan keranjang saat tombol diklik */
+.cart-panel.active {
+    display: block;
+}
+
+.cart-panel h3 {
+    color: #245331;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.empty-cart {
+    color: #777;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.cart-item {
+    border-bottom: 1px solid #ddd;
+    padding: 12px 0;
+}
+
+.cart-item h4 {
+    margin: 0 0 5px;
+    color: #245331;
+}
+
+.cart-item p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.cart-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.cart-actions button {
+    border: none;
+    background: #245331;
+    color: white;
+    padding: 6px 11px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-actions .remove {
+    background: #c0392b;
+}
+
+.cart-total {
+    font-weight: 700;
+    margin: 15px 0;
+    font-size: 17px;
+}
+
+.checkout-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #218b4b;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.checkout-button:hover {
+    background: #176b38;
+}
+
+@media (max-width: 480px) {
+    .cart-floating {
+        right: 12px;
+        bottom: 15px;
+    }
+
+    .cart-panel {
+        width: 300px;
+    }
+}
+
